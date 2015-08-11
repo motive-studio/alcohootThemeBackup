@@ -1,0 +1,73 @@
+<section class="productHighlight">
+	<div class="mainHolder">
+		<div class="detailContainer">
+			<h1>
+				Alcohoot
+				<br>
+				Mobile Breathalyzer
+			</h1>
+			<p>
+				Alcohoot is the world’s first law enforcement grade smartphone breathalyzer. The small device along with the Alcohoot mobile app enables you to test your blood alcohol level quickly, accurately, and easily. The app tracks your results, can order you a taxi, and show you open restaurants nearby.
+			</p>
+			<div class="packageIncludes">
+				<div>
+					<h4>PACKAGE INCLUDES:</h4>
+					<p>Alcohoot Mobile Breathalyzer<br>
+						USB Charging Cable<br>
+						Mouthpieces (8)
+					</p>
+				</div>
+				<div class="colorsAndCart">
+					<div class="colorSelector">
+						<div class="color" id="red">
+						</div>
+						<div class="color" id="black">
+						</div>
+						<div class="color" id="white">
+						</div>
+					</div>
+					<form action="/cart/add" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="id" value="3841227460" id="variantIdInput">
+				      <button type="submit" name="add" id="add" class="addToCartDirect">Add Black</button>
+			   	</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="clear"></div>
+
+<script>
+
+var variantInput = $("#variantIdInput").val();
+console.log(variantInput);
+
+$("#red").click(function() {
+	console.log('red clicked');
+	variantInput = 3841227716;
+	console.log(variantInput);
+	$("#variantIdInput").val(variantInput);
+});
+
+$("#black").click(function() {
+	console.log('black clicked');
+	variantInput = 3841227460;
+	console.log(variantInput);
+	$("#variantIdInput").val(variantInput);
+});
+
+$("#white").click(function() {
+	console.log('white clicked');
+	variantInput = 3841227588;
+	console.log(variantInput);
+	$("#variantIdInput").val(variantInput);
+});
+
+
+
+
+</script>
+
+
+
+

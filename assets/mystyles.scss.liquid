@@ -1,0 +1,473 @@
+p {
+	font-weight: lighter;
+}
+
+button {
+	background-color: #6AA9D0;
+	border: .2rem white solid;
+	color: white;
+	min-width: 140px;
+	height: 50px;
+	font-size: 1.1rem;
+	margin-right: 1.5rem;
+	border-radius: .6rem;
+}
+
+.mainHolder {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.arrow_box {
+	position: relative;
+	background: rgba(255,255,255,0);
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(102, 3, 3, 0);
+	border-top-color: rgba(255,255,255,1);
+	border-width: 20px;
+	margin-left: -20px;
+}
+.arrow_box:before {
+	border-color: rgba(102, 102, 102, 0);
+	border-top-color: #666666;
+	border-width: 23px;
+	margin-left: -23px;
+}
+
+.headerNav {
+	width: 100%;
+	padding: 1.5rem 2.5%;
+	position: fixed;
+	background-color: rgba(255,255,255, .5);
+	color: #555;
+	.navLogo {
+		width: 20%;
+		float: left;
+	}
+	.navLinks {
+		width: 50%;
+		float: left;
+		ul li {
+			padding: 0 2rem;
+			font-size: 1rem;
+			text-transform: uppercase;
+			&.first {
+				padding-left: 0;
+			}
+			a {
+				color: #555;
+			}
+		}
+	}
+	.cart-link {
+		width: 30%;
+		float: left;
+		a {
+			float: right;
+			color: #555;
+		}
+	}
+}
+
+// HOMEPAGE STYLE ************************************ 
+
+.homeHero {
+	// background-image: url( {{ 'homeHeroBackgroundImage.jpg' }} );
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 12rem 2.5% 0 2.5%;
+	background-position: top center;
+	text-align: center;
+	color: #222;
+	margin-bottom: 0;
+	background: -webkit-radial-gradient(circle, #fff, #CACACA);
+	/* Safari 4-5, Chrome 1-9 */
+  	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#CACACA));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #fff, #CACACA);
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, #fff, #CACACA);
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #fff, #CACACA);
+	h1 {
+		font-size: 4.5rem;
+		color: #222;
+		font-weight: 400;
+		span {
+			font-size: 6.25rem;
+			font-weight: 700;
+		}
+	}
+	img {
+		top: 6px;
+		position: relative;
+		padding-top: 2rem;
+	}
+	
+}
+
+.process {
+	padding: 10rem 0;
+	text-align: center;
+	h2 {
+		font-size: 3rem;
+		color: #222;
+		font-weight: 700;
+	}
+	.steps {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: wrap;
+		padding-top: 4rem;
+		.step {
+			-webkit-box-flex: 2 190px;
+			-moz-box-flex:  2 190px;
+			flex:  2 190px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.progress {
+			-webkit-box-flex: 1 95px;
+			-moz-box-flex: 1 95px;
+			flex: 1 95px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.contentRight {
+	background: -webkit-linear-gradient(left, #9DCEEC, #6AA9D0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #9DCEEC, #6AA9D0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #9DCEEC, #6AA9D0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(left, #9DCEEC, #6AA9D0); /* Standard syntax */
+	min-height: 520px;
+	color: white;
+	margin-bottom: 0;
+	padding-bottom: 70px;
+	.contentRightHolder {
+		padding-top: 70px;
+		h2 {
+			color: rgba(255,255,255,0.5);
+		}
+		p {
+			padding-bottom: 2rem;
+		}
+		div {
+			float: right;
+			width: 50%;
+		}
+	}
+}
+
+.contentLeft {
+	padding-bottom: 70px;
+	.contentLeftHolder {
+		width: 80%;
+		margin: 0 auto;
+		padding-top: 70px;
+		img {
+			float: right;
+		}
+		div {
+			float: left;
+			width: 50%;
+		}
+	}
+}
+
+.appFeature {
+	h1 {
+		color: white;
+	}
+	h4 {
+		color: rgba(255,255,255,0.5);
+		text-transform: uppercase;
+	}
+	background-color: #4E4E4E;
+	p {
+		padding-bottom: 2rem;
+		color: white;
+	}
+	button {
+		border: none;
+	}
+}
+
+
+// PRODUCT HIGHLIGHT SNIPPET ************************************ 
+
+.productHighlight {
+	width: 100%;
+	display: inline-block;
+	padding: 80px 0;
+	background-image: url('productRedBG.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40%;
+	z-index: 2;
+}
+
+.detailContainer {
+	width: 57.5%;
+}
+
+.packageIncludes {
+	width: 100%;
+	display: inline-block;
+	div {
+		width: 40%;
+		float: left;
+		display: inline-block;
+		padding-top: 40px;
+		margin: 0 auto;
+	}
+	.colorsAndCart {
+	text-align: center;
+	width: 30%;
+	}
+	.colorSelector {
+		width: 100%;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding-top: 0;
+		margin: 0 auto;
+		.color {
+			border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			margin: 0 auto;
+			cursor: pointer;
+			cursor: hand;
+		}
+		#red {
+			background-color: #F35555;
+		}
+		#black {
+			background-color: #3F3F3F;
+		}
+		#white {
+			background-color: #ffffff;
+			border: 1px solid #999;
+		}
+	}
+}
+
+.addToCartDirect {
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.detailBackground {
+	width: 40%;
+}
+
+.hashtag {
+	text-align: center;
+	padding: 100px 0;
+	background-image: url('drinkSmarterBG.png');
+	background-size: cover;
+	background-position: center;
+	background-position: 0 70%;
+}
+
+// PRODUCT PAGE ************************************ 
+
+.product {
+	padding-top: 10rem;
+}
+
+.productPhotoThumbs {
+	width: 50%;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: wrap;
+	.productPhotoThumb {
+		-webkit-box-flex: 1;
+		-moz-box-flex:  1;
+		flex:  1;
+		margin: 0 auto;
+	}
+}
+
+.included {
+	text-align: center;
+	border-top: 2px solid #D5D5D5;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	p {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 70px 0;
+	}
+	.includedInfo {
+		text-align: left;
+		float: left;
+		padding-top: 70px;
+		p {
+			padding: 0;
+		}
+	}
+}
+
+.featuredProductPhotos {
+	.featuredProductPhoto1 {
+		width: 50%;
+		height: auto;
+		float: left;
+	}
+	.featuredProductPhoto2 {
+		width: 50%;
+		height: auto;
+		float: left;
+	}
+}
+
+.dontForget {
+	margin: 0 auto;
+	text-align: center;
+	padding: 80px 0;
+}
+
+
+
+// SPOTLIGHT PAGE ************************************ 
+
+.spotlight {
+	p {
+		color: #A5A6A5;
+	}
+	.spotlightHero {
+		background-image: url('spotlightHero.png');
+		background-size: cover;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-color: #F3F3F3;
+		.titleContain {
+			padding: 280px 0;
+			h1 {
+				font-size: 100px;
+				color: #3C3D3C;
+				font-weight: 700;
+			}
+		}
+	}
+	.contentRight {
+		background-color: white;
+		background: white;
+		padding-bottom: 0;
+		h2 {
+			font-size: 80px;
+			color: #3C3D3C;
+		}
+		p {
+			max-width: 420px;
+		}
+	}
+	.threeHighlights {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		.highlight {
+			-webkit-box-flex: 1;
+			-moz-box-flex:  1;
+			flex:  1;
+			margin: 0 auto;
+			padding: 40px;
+		}
+	}
+	.bigImage {
+		.bigImageLeft {
+			background-color: #70AED4;
+			background-image: url('bigImageLeft.png');
+			width: 50%;
+			background-position: left;
+			background-size: cover;
+			height: 100%;
+			div {
+				background-color: #70AED4;
+				padding: 80px 80px 40px 80px;
+				position: relative;
+				left: 100%;
+				h3 {
+					color: rgba(255,255,255,0.5);
+				}
+				p {
+					padding-bottom: 40px;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.bigPhoneContent {
+		padding-top: 140px;
+	}
+
+	.specsTable {
+		max-width: 1000px;
+		margin: 0 auto;
+		font-size: 24px;
+		td {
+			padding: .4em 2em;
+			font-weight: lighter;
+		}
+	}
+
+	.fullWidthImage {
+		background-image: url('lifestyleBig.jpg');
+		background-size: cover;
+		.mainHolder {
+			padding: 200px 0;
+			div {
+				max-width: 400px;
+				h1 {
+					font-size: 80px;
+					color: white;
+					font-weight: 700;
+				}
+				p {
+					font-size: 18px;
+					color: white;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
